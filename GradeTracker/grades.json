@@ -1,0 +1,73 @@
+{
+  "Courses":[
+    {
+      "Code": "ABCD-1234",
+      "Evalulations": [
+        {
+          "Description": "Quiz 1",
+          "Weight": 5,
+          "OutOf": 5,
+          "EarnedMarks": 2.5
+        },
+        {
+          "Description": "Midterm",
+          "Weight": 25,
+          "OutOf": 100,
+          "EarnedMarks": 80
+        },
+        {
+          "Description": "Project 1",
+          "Weight": 20,
+          "OutOf": 60,
+          "EarnedMarks": 47
+        }
+      ]
+    },
+    {
+      "Code": "INFO-1234",
+      "Evalulations": [
+        {
+          "Description": "Quiz 1",
+          "Weight": 5,
+          "OutOf": 15,
+          "EarnedMarks": 13
+        },
+        {
+          "Description": "Test 1",
+          "Weight": 15,
+          "OutOf": 30,
+          "EarnedMarks": 22
+        },
+        {
+          "Description": "Final",
+          "Weight": 20,
+          "OutOf": 70,
+          "EarnedMarks": 65
+        }
+      ]
+    },
+    {
+      "Code": "INFO-3138",
+      "Evalulations": [
+        {
+          "Description": "Project 1",
+          "Weight": 15,
+          "OutOf": 100,
+          "EarnedMarks": 80
+        },
+        {
+          "Description": "MidTerm",
+          "Weight": 20,
+          "OutOf": 40,
+          "EarnedMarks": 35
+        },
+        {
+          "Description": "Final",
+          "Weight": 25,
+          "OutOf": 90,
+          "EarnedMarks": 78
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for grade objects",
+
+  "type": "object",
+  "required": [ "Code" ],
+  "additionalProperties": false,
+  "properties": {
+    "Code": {
+      "type": "string",
+      "description": "A course code",
+      "pattern": "[A-Za-z]{4}-[0-9]{4}"
+    },
+    "Evalulations": {
+      "type": [ "array", "null" ],
+      "description": "An collection of evaluation object",
+      "required": [ "Description", "Weight", "OutOf", "EarnedMarks" ],
+      "additionalProperties": false,
+      "properties": {
+        "Description": {
+          "type": "string",
+          "description": "A description of the evaluation"
+        },
+        "Weight": {
+          "type": "number",
+          "description": "The % of the course mark attibuted to the evalution",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "OutOf": {
+          "type": "integer",
+          "description": "The number of marks that represents a perfect score on the evaluation",
+          "minimum": 0
+        },
+        "EarnedMarks": {
+          "type": [ "number", "null" ],
+          "description": "The student's score on the evaluation",
+          "minimum": 0
+        }
+      }
+    }
+  }
+
+}
